@@ -1,6 +1,8 @@
 // import './App.css';
 import React, { Component } from 'react'
 import CBox from './CBox';
+import MultiForm from './MultiForm';
+import SimpleForm from './SimpleForm';
 
 class TestA extends Component {
   constructor(props) {
@@ -67,6 +69,8 @@ function App() {
       <CBox label = 'Banana' />
       <CBox label = 'Orange' />
       <TestA />
+      <SimpleForm />
+      <MultiForm />
     </div>
   );
 }
