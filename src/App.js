@@ -1,8 +1,9 @@
 // import './App.css';
 import React, { Component } from 'react'
+import CBox from './CBox';
 
 function App() {
-
+/*
   const list = [{
     id : 1,
     name : '홍길동',
@@ -13,8 +14,6 @@ function App() {
     name : '홍길순',
     age : 30
   }]
-
-
 
   class Listitem extends Component {
     handleClickName(event) {
@@ -45,10 +44,13 @@ function App() {
     }
    
   }
-
+*/
   return (
     <div className="App">
-      <List list={list} />
+      {/* <List list={list} /> */}
+      <CBox label = 'Apple' />
+      <CBox label = 'Banana' />
+      <CBox label = 'Orange' />
     </div>
   );
 }
