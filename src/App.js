@@ -2,6 +2,21 @@
 import React, { Component } from 'react'
 import CBox from './CBox';
 
+class TestA extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { text : '안녕하세요' }
+    // 상태(state) : 화면에 출력하고 싶은 것
+    // this.setState({<키> : <키값>}) // 상태를 변경 : render() + 화면에 반영됨
+    setTimeout(() => {
+      this.setState({text : '안녕히가세요'})
+    }, 1000)
+  }
+  render() {
+    return <h1>{this.state.text}</h1>
+  }
+}
+
 function App() {
 /*
   const list = [{
@@ -51,6 +66,7 @@ function App() {
       <CBox label = 'Apple' />
       <CBox label = 'Banana' />
       <CBox label = 'Orange' />
+      <TestA />
     </div>
   );
 }
